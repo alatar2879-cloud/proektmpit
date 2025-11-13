@@ -1,0 +1,127 @@
+digraph AI_Researchers {
+    rankdir=LR;
+    graph [fontsize=10, fontname="Arial"];
+
+    node [
+        shape=ellipse,
+        style=filled,
+        fillcolor="#e8f0fe",
+        fontname="Arial",
+        fontsize=10
+    ];
+
+    subgraph cluster_deep {
+        label="Deep Learning";
+        color="#b3c6ff";
+
+        Hinton   [label="Geoffrey Hinton", work="Deep Learning (2015)"];
+        LeCun    [label="Yann LeCun",      work="Gradient-Based Learning (1998)"];
+        Bengio   [label="Yoshua Bengio",   work="Representation Learning (2013)"];
+        Schmidhuber [label="Jürgen Schmidhuber", work="LSTM (1997)"];
+        Sejnowski [label="Terrence Sejnowski", work="Theoretical Neuroscience (2001)"];
+        Sutskever [label="Ilya Sutskever", work="Sequence to Sequence Learning (2014)"];
+        Ng        [label="Andrew Ng", work="Sparse Autoencoder (2011)"];
+        Goodfellow [label="Ian Goodfellow", work="GANs (2014)"];
+        Salakhutdinov [label="Ruslan Salakhutdinov", work="Deep Boltzmann Machines (2009)"];
+        Karpathy [label="Andrej Karpathy", work="Image Captioning (2014)"];
+    }
+
+    subgraph cluster_nlp {
+        label="Natural Language Processing";
+        color="#c2ffd9";
+
+        Vaswani [label="Ashish Vaswani", work="Attention Is All You Need (2017)"];
+        Shazeer [label="Noam Shazeer", work="Transformer (2017)"];
+        Dean    [label="Jeff Dean", work="Massively Distributed ML (2012)"];
+        Kaplan  [label="Jared Kaplan", work="Scaling Laws (2020)"];
+        Radford [label="Alec Radford", work="GPT (2018)"];
+        Brown   [label="Tom Brown", work="GPT-3 (2020)"];
+        Devlin  [label="Jacob Devlin", work="BERT (2018)"];
+        Manning [label="Christopher Manning", work="Stanford NLP (2014)"];
+        Jurafsky [label="Daniel Jurafsky", work="NLP (2014)"];
+        Goldberg [label="Yoav Goldberg", work="Neural NLP (2016)"];
+    }
+
+    subgraph cluster_cv {
+        label="Computer Vision";
+        color="#ffe8cc";
+
+        FeiFei [label="Fei-Fei Li", work="ImageNet (2010)"];
+        He     [label="Kaiming He", work="ResNet (2015)"];
+        Zitnick [label="Larry Zitnick", work="COCO Dataset (2014)"];
+        Torralba [label="Antonio Torralba", work="MIT Places (2014)"];
+        Yuille [label="Alan Yuille", work="Vision as Bayesian Inference (2006)"];
+        Malik [label="Jitendra Malik", work="Normalized Cuts (2000)"];
+        Szegedy [label="Christian Szegedy", work="Inception (2015)"];
+        Viola [label="Paul Viola", work="Viola-Jones Detector (2001)"];
+        Dalal [label="Navneet Dalal", work="HOG Features (2005)"];
+        Lowe [label="David Lowe", work="SIFT (1999)"];
+    }
+
+    subgraph cluster_rl {
+        label="Reinforcement Learning";
+        color="#ffe6e6";
+
+        Sutton [label="Richard Sutton", work="Reinforcement Learning (1998)"];
+        Silver [label="David Silver", work="AlphaGo (2016)"];
+        Mnih   [label="Volodymyr Mnih", work="DQN (2015)"];
+        Hassabis [label="Demis Hassabis", work="AlphaZero (2018)"];
+        SchmidhuberRL [label="J. Schmidhuber (RL)", work="Policy Gradient Methods (1990s)"];
+        Levine [label="Sergey Levine", work="Deep RL Robotics (2016)"];
+        Barto [label="Andrew Barto", work="Reinforcement Learning (1998)"];
+        Brockman [label="Greg Brockman", work="OpenAI Gym (2016)"];
+        Schulman [label="John Schulman", work="PPO/TRPO (2015–2017)"];
+        Abbeel [label="Pieter Abbeel", work="Imitation Learning (2016)"];
+    }
+
+    subgraph cluster_ethics {
+        label="AI Ethics & Safety";
+        color="#e6ccff";
+
+        Amodei [label="Dario Amodei", work="AI Alignment (2016)"];
+        Olah   [label="Chris Olah", work="Circuits (2020)"];
+        Gabriel [label="Iason Gabriel", work="AI Ethics (2023)"];
+        Whittlestone [label="Jessica Whittlestone", work="AI Safety (2021)"];
+        Hendrycks [label="Dan Hendrycks", work="Model Evaluation (2021)"];
+    }
+
+    subgraph cluster_theory {
+        label="AI Theory";
+        color="#d9f2ff";
+
+        Pearl [label="Judea Pearl", work="Causality (2000)"];
+        Jordan [label="Michael Jordan", work="Probabilistic Graphical Models (1998)"];
+        Bishop [label="Christopher Bishop", work="Pattern Recognition (2006)"];
+        MacKay [label="David MacKay", work="Information Theory (2003)"];
+        Welling [label="Max Welling", work="Bayesian Deep Learning (2013)"];
+    }
+
+    subgraph cluster_infra {
+        label="AI Infrastructure";
+        color="#ccf2e6";
+
+        Patterson [label="Dave Patterson", work="TPU Architecture (2017)"];
+        Le        [label="Quoc Le", work="AutoML (2017)"];
+        Pang      [label="Ruoming Pang", work="TPU v3 (2018)"];
+        Abadi     [label="Martín Abadi", work="TensorFlow (2015)"];
+        DeanInfra [label="Jeff Dean (Infra)", work="Distributed AI Systems (2011)"];
+    }
+
+    Hinton -> Bengio;
+    Bengio -> LeCun;
+    Sutskever -> Hinton;
+    Goodfellow -> Bengio;
+    Vaswani -> Shazeer;
+    Radford -> Brown;
+    Devlin -> Manning;
+    FeiFei -> He;
+    He -> Szegedy;
+    Silver -> Mnih;
+    Silver -> Hassabis;
+    Schulman -> Abbeel;
+    Amodei -> Olah;
+    Bishop -> MacKay;
+    Jordan -> Pearl;
+    Abadi -> DeanInfra;
+    Le -> Pang;
+}

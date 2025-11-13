@@ -1,0 +1,99 @@
+digraph AI_Researchers_50 {
+  rankdir=LR;
+  graph [fontsize=10, fontname="Arial"];
+  node [shape=box, style=filled, fillcolor="#e8f0fe", fontname="Arial", fontsize=10];
+
+  // Deep Learning pioneers
+  Geoffrey_Hinton [label="Geoffrey Hinton", works="Backpropagation and deep learning (1986+)", href="https://scholar.google.com/scholar?q=Geoffrey+Hinton"];
+  Yoshua_Bengio [label="Yoshua Bengio", works="Representation Learning (2013)", href="https://scholar.google.com/scholar?q=Yoshua+Bengio"];
+  Yann_LeCun [label="Yann LeCun", works="Convolutional Networks (1998+)", href="https://scholar.google.com/scholar?q=Yann+LeCun"];
+  Alex_Krizhevsky [label="Alex Krizhevsky", works="AlexNet (2012)", href="https://scholar.google.com/scholar?q=Alex+Krizhevsky"];
+  Jurgen_Schmidhuber [label="Jürgen Schmidhuber", works="LSTM (1997)", href="https://scholar.google.com/scholar?q=J%C3%BCrgen+Schmidhuber"];
+  Terrence_Sejnowski [label="Terrence Sejnowski", works="Theoretical Neuroscience (2001)", href="https://scholar.google.com/scholar?q=Terrence+Sejnowski"];
+  Ilya_Sutskever [label="Ilya Sutskever", works="Sequence-to-sequence / deep learning (2014)", href="https://scholar.google.com/scholar?q=Ilya+Sutskever"];
+  Andrew_Ng [label="Andrew Ng", works="Sparse autoencoders / deep learning education", href="https://scholar.google.com/scholar?q=Andrew+Ng"];
+  Ian_Goodfellow [label="Ian Goodfellow", works="GANs (2014)", href="https://scholar.google.com/scholar?q=Ian+Goodfellow"];
+  Ruslan_Salakhutdinov [label="Ruslan Salakhutdinov", works="Deep Boltzmann Machines (2009)", href="https://scholar.google.com/scholar?q=Ruslan+Salakhutdinov"];
+
+  // NLP / Transformers
+  Ashish_Vaswani [label="Ashish Vaswani", works="Attention Is All You Need (2017)", href="https://scholar.google.com/scholar?q=Ashish+Vaswani"];
+  Noam_Shazeer [label="Noam Shazeer", works="Transformer systems (2017)", href="https://scholar.google.com/scholar?q=Noam+Shazeer"];
+  Alec_Radford [label="Alec Radford", works="GPT (2018)", href="https://scholar.google.com/scholar?q=Alec+Radford"];
+  Jacob_Devlin [label="Jacob Devlin", works="BERT (2018)", href="https://scholar.google.com/scholar?q=Jacob+Devlin"];
+  Tom_Brown [label="Tom Brown", works="GPT-3 (2020)", href="https://scholar.google.com/scholar?q=Tom+Brown+GPT-3"];
+  Christopher_Manning [label="Christopher Manning", works="Stanford NLP / dependency parsing", href="https://scholar.google.com/scholar?q=Christopher+Manning"];
+  Daniel_Jurafsky [label="Daniel Jurafsky", works="Foundations of NLP (textbook)", href="https://scholar.google.com/scholar?q=Daniel+Jurafsky"];
+  Yoav_Goldberg [label="Yoav Goldberg", works="Neural NLP methods (2016)", href="https://scholar.google.com/scholar?q=Yoav+Goldberg"];
+  Jared_Kaplan [label="Jared Kaplan", works="Scaling laws for language models (2020)", href="https://scholar.google.com/scholar?q=Jared+Kaplan"];
+  Colin_Raffel [label="Colin Raffel", works="T5 (2019)", href="https://scholar.google.com/scholar?q=Colin+Raffel"];
+
+  // Computer Vision
+  FeiFei_Li [label="Fei-Fei Li", works="ImageNet (2010)", href="https://scholar.google.com/scholar?q=Fei-Fei+Li"];
+  Kaiming_He [label="Kaiming He", works="ResNet (2015)", href="https://scholar.google.com/scholar?q=Kaiming+He"];
+  Christian_Szegedy [label="Christian Szegedy", works="Inception (2015)", href="https://scholar.google.com/scholar?q=Christian+Szegedy"];
+  Jitendra_Malik [label="Jitendra Malik", works="Normalized Cuts / vision fundamentals", href="https://scholar.google.com/scholar?q=Jitendra+Malik"];
+  David_Lowe [label="David Lowe", works="SIFT (1999)", href="https://scholar.google.com/scholar?q=David+Lowe"];
+  Paul_Viola [label="Paul Viola", works="Viola-Jones detector (2001)", href="https://scholar.google.com/scholar?q=Paul+Viola"];
+  Navneet_Dalal [label="Navneet Dalal", works="HOG (2005)", href="https://scholar.google.com/scholar?q=Navneet+Dalal"];
+  Antonio_Torralba [label="Antonio Torralba", works="MIT Places (2014)", href="https://scholar.google.com/scholar?q=Antonio+Torralba"];
+  Alan_Yuille [label="Alan Yuille", works="Vision as Bayesian Inference", href="https://scholar.google.com/scholar?q=Alan+Yuille"];
+  Larry_Zitnick [label="Larry Zitnick", works="COCO dataset contributions", href="https://scholar.google.com/scholar?q=Larry+Zitnick"];
+
+  // Reinforcement Learning
+  Richard_Sutton [label="Richard Sutton", works="Reinforcement Learning textbook (1998)", href="https://scholar.google.com/scholar?q=Richard+Sutton"];
+  David_Silver [label="David Silver", works="AlphaGo (2016)", href="https://scholar.google.com/scholar?q=David+Silver"];
+  Volodymyr_Mnih [label="Volodymyr Mnih", works="DQN (2015)", href="https://scholar.google.com/scholar?q=Volodymyr+Mnih"];
+  Demis_Hassabis [label="Demis Hassabis", works="AlphaZero (2018)", href="https://scholar.google.com/scholar?q=Demis+Hassabis"];
+  Sergey_Levine [label="Sergey Levine", works="Deep RL for robotics", href="https://scholar.google.com/scholar?q=Sergey+Levine"];
+  Pieter_Abbeel [label="Pieter Abbeel", works="Imitation Learning", href="https://scholar.google.com/scholar?q=Pieter+Abbeel"];
+  John_Schulman [label="John Schulman", works="PPO / TRPO (2015–2017)", href="https://scholar.google.com/scholar?q=John+Schulman"];
+  Andrew_Barto [label="Andrew Barto", works="Reinforcement Learning foundational work", href="https://scholar.google.com/scholar?q=Andrew+Barto"];
+  Greg_Brockman [label="Greg Brockman", works="OpenAI engineering leadership", href="https://scholar.google.com/scholar?q=Greg+Brockman"];
+  Volodya_Mnih [label="Volodya Mnih (alias)", works="DQN related work", href="https://scholar.google.com/scholar?q=Volodya+Mnih"];
+
+  // Generative models & Diffusion
+  Diederik_Kingma [label="Diederik Kingma", works="Variational Autoencoders (2013)", href="https://scholar.google.com/scholar?q=Diederik+Kingma"];
+  Max_Welling [label="Max Welling", works="Bayesian Deep Learning", href="https://scholar.google.com/scholar?q=Max+Welling"];
+  Tero_Karras [label="Tero Karras", works="StyleGAN (2018)", href="https://scholar.google.com/scholar?q=Tero+Karras"];
+  Jonathan_Ho [label="Jonathan Ho", works="DDPM / diffusion models", href="https://scholar.google.com/scholar?q=Jonathan+Ho"];
+  Prafulla_Dhariwal [label="Prafulla Dhariwal", works="Diffusion and generative work", href="https://scholar.google.com/scholar?q=Prafulla+Dhariwal"];
+  Chelsea_Finn [label="Chelsea Finn", works="Meta-learning / MAML", href="https://scholar.google.com/scholar?q=Chelsea+Finn"];
+
+  // Ethics / societal impacts
+  Timnit_Gebru [label="Timnit Gebru", works="Model bias and ethics", href="https://scholar.google.com/scholar?q=Timnit+Gebru"];
+  Emily_Bender [label="Emily Bender", works="Stochastic parrots critique", href="https://scholar.google.com/scholar?q=Emily+Bender"];
+  Margaret_Mitchell [label="Margaret Mitchell", works="Ethics in ML", href="https://scholar.google.com/scholar?q=Margaret+Mitchell"];
+  Kate_Crawford [label="Kate Crawford", works="Social impacts of AI", href="https://scholar.google.com/scholar?q=Kate+Crawford"];
+  Abeba_Birhane [label="Abeba Birhane", works="Social implications and critique", href="https://scholar.google.com/scholar?q=Abeba+Birhane"];
+
+  // Theory / Causality / Bayesian
+  Judea_Pearl [label="Judea Pearl", works="Causality (2000)", href="https://scholar.google.com/scholar?q=Judea+Pearl"];
+  Michael_Jordan [label="Michael Jordan", works="Probabilistic Graphical Models", href="https://scholar.google.com/scholar?q=Michael+Jordan"];
+  Christopher_Bishop [label="Christopher Bishop", works="Pattern Recognition and ML", href="https://scholar.google.com/scholar?q=Christopher+Bishop"];
+  David_MacKay [label="David MacKay", works="Information Theory, Inference, and Learning", href="https://scholar.google.com/scholar?q=David+MacKay"];
+  Max_Welling2 [label="Max Welling (theory)", works="Bayesian approaches", href="https://scholar.google.com/scholar?q=Max+Welling+theory"];
+
+  // Infrastructure / Systems / Hardware
+  Dave_Patterson [label="Dave Patterson", works="TPU architecture / systems", href="https://scholar.google.com/scholar?q=Dave+Patterson"];
+  Quoc_Le [label="Quoc Le", works="AutoML and NAS", href="https://scholar.google.com/scholar?q=Quoc+Le"];
+  Martín_Abadi [label="Martín Abadi", works="TensorFlow (2015)", href="https://scholar.google.com/scholar?q=Mart%C3%ADn+Abadi"];
+  Jeff_Dean_Infra [label="Jeff Dean", works="Distributed ML systems", href="https://scholar.google.com/scholar?q=Jeff+Dean"];
+  Ruoming_Pang [label="Ruoming Pang", works="TPU performance work", href="https://scholar.google.com/scholar?q=Ruoming+Pang"];
+
+  // Some example directed relations (influence / coauthorship)
+  Geoffrey_Hinton -> Alex_Krizhevsky;
+  Alex_Krizhevsky -> Ilya_Sutskever;
+  Ian_Goodfellow -> Yoshua_Bengio;
+  Ashish_Vaswani -> Noam_Shazeer;
+  Alec_Radford -> Tom_Brown;
+  Jacob_Devlin -> Christopher_Manning;
+  FeiFei_Li -> Kaiming_He;
+  Kaiming_He -> Christian_Szegedy;
+  Richard_Sutton -> Andrew_Barto;
+  David_Silver -> Volodymyr_Mnih;
+  Diederik_Kingma -> Max_Welling;
+  Tero_Karras -> Jonathan_Ho;
+  Timnit_Gebru -> Emily_Bender;
+  Judea_Pearl -> Michael_Jordan;
+  Martín_Abadi -> Jeff_Dean_Infra;
+}
