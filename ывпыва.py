@@ -4,6 +4,19 @@ import os
 import re
 import webbrowser
 import networkx as nx
+
+# === Автоматическая настройка пути к Graphviz ===
+# Если Graphviz установлен стандартно — эти пути обычно подходят:
+possible_paths = [
+    r"C:\Program Files\Graphviz\bin",
+    r"C:\Program Files (x86)\Graphviz\bin"
+]
+
+for path in possible_paths:
+    if os.path.exists(path):
+        os.environ["PATH"] += os.pathsep + path
+        break
+
 from graphviz import Source
 import tempfile
 import shutil
